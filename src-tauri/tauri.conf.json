@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Stretch & Water",
+  "version": "0.5.1",
+  "identifier": "com.stretchandwater.poc001",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost; style-src 'self'; object-src 'none'; base-uri 'none'",
+      "capabilities": [],
+      "devCsp": "default-src 'self'; img-src 'self' asset: http://asset.localhost; style-src 'self' 'unsafe-inline'; connect-src 'self' ws://127.0.0.1:1420 http://127.0.0.1:1420; object-src 'none'; base-uri 'none'"
+    },
+    "withGlobalTauri": true
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app"
+    ],
+    "category": "HealthcareAndFitness",
+    "resources": {
+      "assets/cling.wav": "cling.wav",
+      "assets/reserva.png": "reserva.png",
+      "assets/films/": "films/"
+    },
+    "macOS": {
+      "minimumSystemVersion": "12.0",
+      "infoPlist": "Info.plist"
+    },
+    "icon": [
+      "icons/lotus.png",
+      "icons/lotus.icns"
+    ]
+  }
+}

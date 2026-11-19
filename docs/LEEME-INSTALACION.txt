@@ -1,0 +1,28 @@
+Stretch & Water 0.5.1 — versión preliminar para Mac con Apple Silicon
+
+Descarga oficial:
+https://github.com/melinalazaro/Strech-WaterApp/releases/tag/v0.5.1
+
+Primera instalación
+1. Descargá Stretch-and-Water-0.5.1-macOS-arm64.zip y descomprimilo con doble clic. Se crea la carpeta «Stretch and Water».
+2. Mové la carpeta completa a una ubicación propia donde puedas guardar archivos, por ejemplo Escritorio/Bureau. Conservá el nombre de la aplicación y los archivos ocultos que vienen junto a ella.
+3. Dentro de esa carpeta, hacé doble clic en «Stretch & Water.app». Buscá la figura y SW junto al reloj. Si usás varias pantallas, revisá sus barras superiores.
+4. En «Tomar agua» elegí «Tomar agua ahora». Para los avisos automáticos, activá cada tipo y elegí 30 minutos, 60 minutos o 2 horas.
+
+Si macOS bloquea la apertura
+Esta entrega tiene firma local ad hoc; no tiene firma de distribución ni notarización de Apple. Si reconocés la descarga y confiás en ella, después del primer intento de apertura podés consultar «Abrir igualmente» en Ajustes del Sistema → Privacidad y seguridad (en versiones anteriores: Preferencias del Sistema → Seguridad y privacidad). Seguí las indicaciones de Apple para tu versión:
+https://support.apple.com/es-es/102445
+Si aparece un aviso diferente o la opción no está disponible, conservá el mensaje y consultalo. La descarga en otra Mac aún no fue validada.
+
+Actualizar una instalación existente
+1. En SW, esperá «Preferencias guardadas» y elegí «Salir». Descomprimí el nuevo ZIP sin iniciar la segunda copia.
+2. Guardá una copia de la aplicación anterior. Copiá únicamente la nueva «Stretch & Water.app» a la carpeta habitual y elegí «Reemplazar». Conservá la carpeta data y el marcador oculto de esa instalación.
+3. Abrí la aplicación desde su ubicación habitual y revisá los intervalos y el sonido. La 0.5.1 conserva las preferencias anteriores y mantiene 60 minutos para agua cuando la configuración no tenía ese campo.
+4. Antes de volver de 0.5.1 a 0.5.0, elegí 30 o 60 minutos para estiramientos y 60 minutos para agua, esperá el guardado y salí. Las versiones anteriores no admiten la nueva selección de 2 horas. La reversión desde 0.5.1 no fue probada manualmente.
+
+Preferencias e inicio de sesión
+Las preferencias se guardan en data/normal dentro de la carpeta elegida. El menú Sonido permite silenciar el aviso; el volumen depende de la Mac. Al abrir con preferencias nuevas puede solicitarse el inicio automático al entrar en macOS. Esa función sigue pendiente de validación después de un reinicio real.
+Para mover o retirar una instalación, desmarcá primero «Inicio de sesión → Iniciar al iniciar sesión» (o cancelá su solicitud si está pendiente), actualizá el estado y elegí «Salir».
+
+Compatibilidad y pruebas pendientes
+Solo Mac con Apple Silicon (M1 o posterior). Mínimo declarado: macOS 12.0, sin comprobación en todas sus versiones. No se incluyen versiones para Mac Intel, Windows o Linux. Los nuevos intervalos pasaron las pruebas automáticas; su revisión visual y la instalación desde una descarga pública están pendientes.

@@ -1,0 +1,9 @@
+html, body, #root {
+  margin: 0; width: 100%; height: 100%; overflow: hidden;
+  background: transparent; pointer-events: none; user-select: none;
+}
+main { opacity: 0; display: flex; height: 100%; flex-direction: column; align-items: center; justify-content: flex-end; gap: 2px; }
+main.visible { opacity: 1; }
+.pose { width: 180px; height: 180px; overflow: hidden; }
+.pose img { display: block; height: 100%; width: auto; max-width: none; }
+.label { height: 24px; font: 600 12px/24px system-ui, sans-serif; color: white; text-shadow: 0 1px 3px black, 0 0 2px black; }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
+  <title>Figura provisional de estiramiento</title>
+  <path d="M61 110v56m58-56v56M56 113h68" stroke="#667085" stroke-width="8" stroke-linecap="round"/>
+  <path d="M77 114l-9 43 20 10m14-53 10 43 20 10" stroke="#24334c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M70 67L42 44 29 14m81 53 28-23 13-30" stroke="#d59273" stroke-width="12" stroke-linecap="round"/>
+  <path d="M69 64h42l6 53H63z" fill="#5055a4"/>
+  <path d="M68 36c0-27 44-27 44 0v21H68z" fill="#293040"/>
+  <ellipse cx="90" cy="37" rx="17" ry="20" fill="#dca082"/>
+  <path d="M72 29c5-24 34-17 36 0-12-1-15-7-18-11-4 7-9 10-18 11z" fill="#293040"/>
+  <path d="M84 43q6 5 12 0" stroke="#744332" stroke-width="2" stroke-linecap="round"/>
+  <path d="M78 167h13m29 0h15" stroke="#3d7ba6" stroke-width="10" stroke-linecap="round"/>
+</svg>
