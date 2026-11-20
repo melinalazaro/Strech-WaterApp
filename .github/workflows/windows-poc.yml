@@ -1,0 +1,31 @@
+name: Windows technical preview
+on:
+  workflow_dispatch:
+  push:
+    branches: [windows-poc]
+    paths: ["windows-poc/**", ".github/workflows/windows-poc.yml"]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - run: npm ci
+      - name: Build preview installer
+        working-directory: windows-poc
+        run: ../node_modules/.bin/tauri.cmd build --bundles nsis -- --locked
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sw-windows-preview
+          path: |
+            windows-poc/src-tauri/target/release/bundle/nsis/*-setup.exe
+            windows-poc/docs/PRUEBA-ES.md
+            windows-poc/docs/PRUEBA-FR.md
+          if-no-files-found: error
