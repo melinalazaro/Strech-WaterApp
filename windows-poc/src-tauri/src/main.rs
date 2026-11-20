@@ -37,7 +37,13 @@ fn main() {
             .menu(&menu).show_menu_on_left_click(true).on_menu_event(move |app, event| {
                 if event.id.as_ref() == "quit" { app.exit(0); return; }
                 if event.id.as_ref() != "test" { return; }
-                let Some(window) = app.get_webview_window("reminder") else { return; };
+                let app2 = app.clone();
+                let counter = Arc::clone(&counter);
+                std::thread::spawn(move || {
+                    std::thread::sleep(Duration::from_secs(5));
+                    let handle = app2.clone();
+                    let _ = app2.run_on_main_thread(move || {
+                let Some(window) = handle.get_webview_window("reminder") else { return; };
                 let mut point = Point { x:0, y:0 };
                 if unsafe { GetCursorPos(&mut point) } == 0 { return; }
                 let monitor = unsafe { MonitorFromPoint(point, 1) };
@@ -53,6 +59,8 @@ fn main() {
                 let id = counter.fetch_add(1, Ordering::SeqCst)+1;
                 let counter2 = Arc::clone(&counter);
                 std::thread::spawn(move || { std::thread::sleep(Duration::from_secs(10)); if counter2.load(Ordering::SeqCst) == id { let _ = window.hide(); } });
+                    });
+                });
             }).build(app)?;
         Ok(())
     }).build(tauri::generate_context!()).expect("No se pudo iniciar la prueba")

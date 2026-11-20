@@ -15,9 +15,9 @@ Necesitás Windows 11 de 64 bits con procesador Intel o AMD. Si usás dos pantal
 
 ## Qué probar
 
-1. Hacé clic en el ícono y elegí «Probar figura / Tester». ¿Aparece la figura abajo a la derecha, por unos 10 segundos, sin fondo rectangular ni marco?
+1. Hacé clic en el ícono y elegí «Probar figura / Tester». En los siguientes 5 segundos, mové el cursor a la pantalla que quieras probar. ¿Aparece allí abajo a la derecha, por unos 10 segundos, sin fondo rectangular ni marco?
 2. Repetí la prueba y seguí escribiendo en una ventana propia. ¿Podés continuar sin que la figura te quite el foco? Hacé clic en una zona de tu ventana que esté detrás de la figura. ¿Recibe el clic?
-3. Si tenés dos pantallas, dejá el cursor en una de ellas y activá la prueba. Repetí con la otra. ¿Aparece en la pantalla donde quedó el cursor y se mantiene allí mientras dura? Si solo tenés una pantalla, indicá «no probada».
+3. Si tenés dos pantallas, activá la prueba y, durante los 5 segundos de espera, dejá el cursor en una de ellas. Repetí con la otra. ¿Aparece en la pantalla donde quedó el cursor y se mantiene allí mientras dura? Si solo tenés una pantalla, indicá «no probada».
 4. Repetí varias veces. ¿La figura siempre reaparece y desaparece? En el menú elegí «Salir / Quitter» y comprobá que el ícono desaparezca.
 5. Si querés quitar la prueba, usá Configuración → Aplicaciones → Aplicaciones instaladas, buscá «Stretch Water Windows PRUEBA» y elegí Desinstalar.
 

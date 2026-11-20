@@ -15,9 +15,9 @@ Il vous faut Windows 11 64 bits sur un processeur Intel ou AMD. Avec deux écran
 
 ## Tests à effectuer
 
-1. Cliquez sur l’icône et choisissez « Probar figura / Tester ». L’image apparaît-elle en bas à droite pendant environ 10 secondes, sans fond rectangulaire ni bordure ?
+1. Cliquez sur l’icône et choisissez « Probar figura / Tester ». Dans les 5 secondes qui suivent, déplacez le curseur sur l’écran à tester. L’image y apparaît-elle en bas à droite pendant environ 10 secondes, sans fond rectangulaire ni bordure ?
 2. Recommencez en écrivant dans votre propre fenêtre. Pouvez-vous continuer à écrire ? Cliquez sur une zone de votre fenêtre située derrière l’image. Le clic atteint-il votre fenêtre ?
-3. Si vous avez deux écrans, placez le curseur sur l’un et lancez le test. Recommencez sur l’autre. L’image apparaît-elle sur l’écran où se trouve le curseur et y reste-t-elle jusqu’à la fin ? Si vous n’avez qu’un écran, indiquez « non testé ».
+3. Si vous avez deux écrans, lancez le test puis, pendant les 5 secondes d’attente, placez le curseur sur l’un. Recommencez sur l’autre. L’image apparaît-elle sur l’écran où se trouve le curseur et y reste-t-elle jusqu’à la fin ? Si vous n’avez qu’un écran, indiquez « non testé ».
 4. Recommencez plusieurs fois. L’image apparaît-elle et disparaît-elle à chaque fois ? Dans le menu, choisissez « Salir / Quitter » et vérifiez que l’icône disparaît.
 5. Pour retirer le test, ouvrez Paramètres → Applications → Applications installées, cherchez « Stretch Water Windows PRUEBA » et choisissez Désinstaller.
 
